@@ -1,1 +1,23 @@
-
+{
+  name: "Clefable",
+        description: "Clefable is a tall, pink Pokémon with a vaguely star-shaped body. It has long, pointed ears with dark brown tips and black, oval eyes with wrinkles on either side. A curled lock of fur hangs over its forehead, much like its long, tightly curled tail. On its back is a pair of dark pink wings; each wing has three points. Its hands have three fingers each, and its feet have two clawed toes and dark pink soles.",
+        ability: "Cute Charm, Magic Guard and Unaware",
+        image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png",
+        footprint: "https://archives.bulbagarden.net/media/upload/d/d8/F0036.png",
+        dexindex: 36,
+        type: "Normal",
+        subtype: null,
+        weaknesses:  ["FIGHTING"],
+        gender: "female",
+        weight: 40000,
+        height: 130,
+        generation: 1,
+        spilversion: "All",
+        canEvolve: false,
+        statsHP: 7,
+        statsAttack: 4,
+        statsDefence: 5,
+        statsSpecialAttack: 5,
+        statsSpecialDefence: 5,
+        statsSpeed: 3
+}
