@@ -1,106 +1,122 @@
 body {
-    margin: 0;
-    padding: 0;
-  }
-  
-.center{
-    margin: 0;
-    padding: 0;
-    top: 0%;
-    font-family:monospace;
-    font-size: 3vh;
-    color: #ffffff;
-    text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000, 0.3vh 0.3vh 0 #000;
-
-    width: 100%;    
-    position: absolute;
-    text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-  .headers {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    left: 0;
-    padding: 0;
-    position: absolute;
-  }
+.center {
+  margin: 0;
+  padding: 0;
+  top: 0%;
+  font-family: monospace;
+  font-size: 3vh;
+  color: #ffffff;
+  text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000, 0.3vh 0.3vh 0 #000;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+#mainPop{
+  display: none;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 90%;
+  height: 80%;
+  text-align: center;
+  font-family: monospace;
+  color: #ffffff;
+}
+
+#popup{
+  width: 100%;
+  height: 100%;
+}
+
+.headers {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  left: 0;
+  padding: 0;
+  position: absolute;
+}
+
+#item-details {
+  position: absolute;
+  display: none;
+  top: 12%;
+  left: 3%;
+  text-align: center;
+  width: 89vh;
+  height: 19vh;
+}
+
+#item-image {
+  width: 80vh;
+  height: 15vh;
+}
+
+#item-text {
+  width: 100%;
+  font-size: 5vh;
+}
+
+#item-container {
+  position: relative; /* make sure container is positioned relative */
+}
+
+#item-container img,
+#item-container p {
+  position: absolute; /* position image and text absolutely inside container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%); /* center horizontally and vertically */
+}
+
+#container {
+  width: 35%;
+  right: 12.6%;
+  top: 6.6%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: 3% auto;
+  padding: 1.5%;
+  font-size: 2vh;
+  overflow-y: scroll;
+  height: 80%;
+}
+
+#curImage{
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  width: 60%;
+
+}
+
+#grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60%, 100%));
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  background-image: url(./images/dex.jpg);
+  padding: 5.5%;
+  font-size: 124%;
+  background-repeat: no-repeat;
+  background-size: 167%;
+  text-align: center;
+  cursor: pointer;
+}
 
 
-  #item-details {
-    position: absolute;
-    display: none;
-    top: 12%;
-    left: 3%;
-    text-align: center;
-    width: 89vh;
-    height: 14vh;
-  }
-  
-  #item-image {
-    width: 80vh;
-    height: 15vh;
-  }
-  
-  #item-text {
-    font-size: 5vh;
-  }
-  
-  #item-container {
-    position: relative; /* make sure container is positioned relative */
-  }
 
+.grid-item h2 {
+  margin-top: 0;
+}
 
-
-  #item-container img, #item-container p {
-    position: absolute; /* position image and text absolutely inside container */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%); /* center horizontally and vertically */
-  }
-  
-
-  #container {
-    width: 35%;
-    right: 12.6%;
-    top: 6.6%;
-    background-repeat: no-repeat;
-    position: absolute;
-    margin: 3% auto;
-    padding: 1.5%;
-    font-size: 2vh;
-    overflow-y: scroll;
-    height: 80%;
-  }
-  
-  #grid {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60%, 100%));
-  }
-  
-  .grid-item {
-    background-color: #f2f2f2;
-    background-image: url(./images/dex.jpg);
-    padding: 5.5%;
-    font-size: 124%;
-    background-repeat: no-repeat;
-    background-size: 167%;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .grid-item:hover #item-details{
-    display: block;
-  }
-  
-  .grid-item h2 {
-    margin-top: 0;
-  }
-  
-  .grid-item p {
-    margin-bottom: 0;
-  }

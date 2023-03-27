@@ -5,21 +5,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="./images/header.jpg" class="headers">
-    <img src="./images/dexbackground.png" style="position: absolute; width: 48%; height: 90%;right: 1.04%;top: 10%;">
-    <div class="center">
-        <h1 style="margin: 0; padding-top: 0.5%;">Pokedex</h1>
+  <img src="./images/header.jpg" class="headers">
+  <img src="./images/dexbackground.png" style="position: absolute; width: 48%; height: 90%;right: 1.04%;top: 10%;">
+  <div class="center">
+    <h1 style="margin: 0; padding-top: 0.5%;">Pokedex</h1>
+  </div>
+  <div id="container">
+    <ul id="grid"></ul>
+  </div>
+  <div id="item-details">
+    <div id="item-container">
+      <img id="item-image" src="./images/NamePlate.png" alt="">
+      <p id="item-text"></p>
     </div>
-    <div id="container">
-        <ul id="grid"></ul>
-      </div>
-    <script src="script.js"></script>
-
-    <div id="item-details">
-      <div id="item-container">
-        <img id="item-image" src="./images/NamePlate.png" alt="">
-        <p id="item-text"></p>
-      </div>
-    </div>
+    <img id="curImage" src="">
+  </div>
+  <script src="script.js"></script>
+  <div id="mainPop">
+    <img id="popup" src="./images/popup.png">
+    <img id="popupimg" src="" style="position: absolute; top: 18%; left:13%; width: 30%;">
+    <img id="popupfoot" src="" style="position: absolute; top: 18%; left:13%; width: 5%;">
+    <h1 id="popuph" style="position: absolute; left: 50%;top: 3%; font-size: 7vh; transform: translateX(-50%);  text-shadow: -0.3vh -0.3vh 0 #000, 0.3vh -0.3vh 0 #000, -0.3vh 0.3vh 0 #000, 0.3vh 0.3vh 0 #000;    "></h1>
+    <p id="popupp" style="position: absolute; left: 44%;top: 15%; font-size: 2.5vh; width: 43%; color: #000;"></h1>
+  </div>
 </body>
 </html>
