@@ -7,7 +7,7 @@
         "dexindex": 36,
         "type": "Normal",
         "subtype": null,
-        "weaknesses":  ["FIGHTING"],
+        "weaknesses":  "FIGHTING",
         "gender": "female",
         "weight": 40000,
         "height": 130,
