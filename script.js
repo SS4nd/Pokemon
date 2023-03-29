@@ -37,7 +37,7 @@ async function initApp() {
                 mainPop.style.display = 'block';
                 itemDetails.style.display = 'block';
                 img.src = name.image;
-                const temp = `123`;
+                const temp = `${name.description}<br>Abilities: ${name.ability}<br>Type and Subtype: ${name.type} ${name.subtype}<br>Weaknesses: ${name.weaknesses}<br>Gender: ${name.gender}<br>Weight(g):  ${name.weight} and Height(cm): ${name.height} <br>Generation:  ${name.generation}  <br>Game version:  ${name.spilversion} <br>Can evolve: ${name.canEvolve}<br>statsHP: ${name.statsHP}    statsAttack: ${name.statsAttack}  <br>statsDefence: ${name.statsDefence}   statsSpeed: ${name.statsSpeed}   <br>statsSpecialDefence: ${name.statsSpecialDefence}   statsSpecialAttack: ${name.statsSpecialAttack}`;
 
                 document.getElementById("popuph").innerHTML = `${name.dexindex} ${name.name[0].toUpperCase()}${name.name.substring(1)}`;
                 document.getElementById("popupp").innerHTML = temp;
