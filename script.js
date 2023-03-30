@@ -2,6 +2,13 @@
 
 window.addEventListener("load", initApp);
 
+async function getData(url){
+    const response = await fetch(url);
+    const data = await response.json();
+    data.sort((a, b) => a.dexindex - b.dexindex);
+    return data;
+}
+
 async function initApp() {
     const grid = document.getElementById('grid');
     const itemDetails = document.getElementById('item-details');
@@ -13,11 +20,8 @@ async function initApp() {
     var foot = document.getElementById("popupfoot");
 
     try {
-        const response = await fetch('https://cederdorff.github.io/dat-js/05-data/pokemons.json');
-        const data = await response.json();
-        data.sort((a, b) => a.dexindex - b.dexindex);
-
-        data.forEach(name => {
+        const pokemons = await getData('https://cederdorff.github.io/dat-js/05-data/pokemons.json');
+        pokemons.forEach(name => {
             const listItem = document.createElement('li');
             listItem.className = 'grid-item';
             const heading = document.createElement('h2');
